@@ -7,20 +7,13 @@
 
     <title>Projects</title>
 
-      <!-- Bootstrap CSS CDN -->
+      <!-- Stylesheets -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
-
-    <!-- Our Custom CSS -->
     <link rel="stylesheet" href="style5.css">
     <link rel="stylesheet" href="projects.css">
 
+    <script src="jquery-3.6.0.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-
-    <script src="jquery-3.6.0.min.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -28,6 +21,12 @@
                 $('#sidebar').toggleClass('inactive');
                 $(this).toggleClass('inactive');
             });
+        });
+    </script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function(){
+            $("#footer").load("footer.html");
         });
     </script>
 
@@ -102,28 +101,28 @@
                 <img class="d-block w-100  mx-auto" src="DRT.png" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>PDF Unduplicator</h5>
-                    <p style = "text-align: left;">Worked as the lead contributor to the PDF Unduplicator, a desktop application capable of scanning through PDF files of any size, removing duplicate pages, and identifying those that were potentially outdated. This was necessary as numerous government files contained redundant or outdated data. This information served no use and only bogged down servers which slowed progress immensely. These PDFs were initially being cleaned by hand, but the PDF Unduplicator reduced the time needed to remove the unnecessary pages from about an hour to under a minute. </p>
+                    <p style = "text-align: left;">Worked as the lead contributor to NTConcepts PDF Unduplicator, a desktop application capable of scanning through PDF files of any size, removing duplicate pages, and identifying those that were potentially outdated. This was necessary as numerous government files contained redundant or outdated data. This information served no use and only bogged down servers which slowed progress immensely. These PDFs were initially being cleaned by hand, but the PDF Unduplicator reduced the time needed to remove the unnecessary pages from about an hour to under a minute. </p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100  mx-auto" src="Unduplicator.png" alt="Second slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Data Retrieval Tool</h5>
-                    <p style = "text-align: left;">Worked as the lead contributor to the company's Data Retrieval Tool, a desktop application built using Pyqt5 and Pandas, capable of quickly visualizing, sorting, and merging large amounts of data with ease.  When I arrived the company had a very rudimentary tool in use. I was tasked with extending the tools current features, fleshing out those not yet in place,  and then subsequently optimizing the tool to improve its runtime performance.</p>
+                    <p style = "text-align: left;">Worked as the lead contributor to the VASpace's Data Retrieval Tool, a desktop application built using Pyqt5 and Pandas, capable of quickly visualizing, sorting, and merging large amounts of data with ease.  When I arrived the company had a very rudimentary tool in use. I was tasked with extending the tools current features, fleshing out those not yet in place,  and then subsequently optimizing the tool to improve its runtime performance.</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100 mx-auto" src="Overtime.png" alt="Third slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Overtime</h5>
-                    <p>...</p>
+                    <p>Worked as a lead contributor to Overtime. A 2D platformer built using Unity and C#. The game's core mechanics were focused around manipulating time in order to solve simple platforming puzzles. I implemented the movement, audio, animations, platforming, freezing mechanic, and UI.</p>
                 </div>
             </div>
             <div class="carousel-item mx-auto">
                 <img class="d-block w-100" src="BardsTale.png" alt="Fourth slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>A Bard's Tale</h5>
-                    <p>...</p>
+                    <p>Worked as a lead contributor to a Bard's Tale. A isometric 2D ARPG. The game's core mechanics were focused on using specific key inputs to trigger spell effects that would affect the dungeon and enemies around you. Developed the UI for the player’s health and implemented the means by which the player dealt and received damage Implemented various spell effects for altering the lighting of a room, healing the player, shooting fireballs, increasing the player’s movement speed, and slowing the speed of enemies</p>
                 </div>
             </div>
         </div>
@@ -136,6 +135,9 @@
             <span class="sr-only">Next</span>
         </a>
         </div>
+    </div>
+    </div>
+    <div id = "footer"></div>
 
     <script>
         $('.carousel').carousel()

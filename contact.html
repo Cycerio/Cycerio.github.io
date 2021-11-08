@@ -18,13 +18,10 @@
     <link rel="stylesheet" href="contact.css">
 
 
-    <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-
     <script src="jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -32,6 +29,13 @@
                 $('#sidebar').toggleClass('inactive');
                 $(this).toggleClass('inactive');
             });
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        jQuery(document).ready(function(){
+            $("#footer").load("footer.html");
         });
     </script>
 
@@ -91,30 +95,33 @@
                     </div>
                 </div>
             </nav>
-        <div class="container">
-            <form method = "post" form action="https://getform.io/f/19a9a8d8-fd86-4c6c-a55a-a26eca958350">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <div class="container contact">
+                <form method = "post" form action="https://getform.io/f/19a9a8d8-fd86-4c6c-a55a-a26eca958350">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-                <label for="Email">Email</label>
-                <input type="text" id="email" name="email" placeholder="Your email..">
+                    <label for="Email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your email..">
 
-                
-                <label for="Subject">Subject</label>
-                <input type="text" id="Subject" name="Subject" placeholder="Your subject..">
-  
+                    
+                    <label for="Subject">Subject</label>
+                    <input type="text" id="Subject" name="Subject" placeholder="Your subject..">
+    
 
-                <label for="body">Body</label>
-                <textarea id="body" name="body" placeholder="Write something.." style="height:200px"></textarea>
+                    <label for="body">Body</label>
+                    <textarea id="body" name="body" placeholder="Write something.." style="height:200px"></textarea>
 
-                <input type="submit" value="Submit">
+                    <input type="submit" value="Submit">
 
-            </form>
+                </form>
+            </div>
         </div>
     </div>
+    <div id="footer"></div>
+
 
 
 
