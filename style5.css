@@ -85,6 +85,11 @@ a, a:hover, a:focus {
     color: blue;
   }
 
+  
+.icon-white {
+    color: white;
+  }
+
 .center {
     text-align: center;
 }
